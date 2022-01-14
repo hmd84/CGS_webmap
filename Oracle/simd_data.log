@@ -1,0 +1,55 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Tue Jan 11 18:32:50 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   simd_data.ctl
+Data File:      simd_data_proj.csv
+  Bad File:     simd_data_proj.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SIMD, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DATAZONE                            FIRST     *   ,       CHARACTER            
+DZNAME                               NEXT     *   ,       CHARACTER            
+LANAME                               NEXT     *   ,       CHARACTER            
+XCOORD                               NEXT     *   ,       CHARACTER            
+YCOORD                               NEXT     *   ,       CHARACTER            
+SIMD_RANK                            NEXT     *   ,       CHARACTER            
+SIMD_QUANTILE                        NEXT     *  WHT      CHARACTER            
+
+
+Table SIMD:
+  597 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 451500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:           597
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Tue Jan 11 18:32:50 2022
+Run ended on Tue Jan 11 18:32:55 2022
+
+Elapsed time was:     00:00:04.97
+CPU time was:         00:00:00.03
