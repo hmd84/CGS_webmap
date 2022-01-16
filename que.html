@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Questionnarie</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;}
+
+li {float: left;}
+
+li a {display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+
+li a:hover:not(.active) {background-color: #606060;}
+.active {background-color: #4CAF50;}
+        
+        
+
+
+
+.across{display:flex;justify-content: space-around;}
+
+.center{text-align:center;}
+
+
+.theme-l1 {color:#fff; background-color:#333333}
+
+.padding-64{padding-top:64px;
+	        padding-bottom:64px}
+.card {box-shadow:0 2px 5px 1px rgba(0,0,0,0.16),0 2px 10px 1px rgba(0,0,0,0.12); color:#000;background-color:#fff}
+
+.left{margin-left: 55px}	
+	
+.button{background-color:#4CAF50; border: none;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer; border-radius: 10px;}
+    
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+	
+
+
+from{padding: 60px;}
+from p{height: 20px;line-height: 60px;} 
+from label,h5,p{height:60px;line-height: 60px;}
+label,h4,h5,p{margin-left: 60px;}
+h3{text-align: center;padding-top: 150px;}
+</style>
+</head>
+
+<body id="que">	
+
+    
+    
+	<!-- guide line -->
+<ul>
+  <li><a href="https://www.geos.ed.ac.uk/~s1997205/web-map/home.html">HOME</a></li>
+  <li><a href="https://www.geos.ed.ac.uk/~s1997205/web-map/work.html">WORK</a></li>
+  
+  <li><a href="https://www.geos.ed.ac.uk/~s2126572/choropleth.html">MAP</a></li>
+  <li><a class="active">QUESTIONNAIRE</a></li>
+  <li style="float:right"><a href="https://www.geos.ed.ac.uk/~s1997205/web-map/more-infor.html">MORE INFORMATION</a></li>
+  <li style="float:right"><a href="https://www.geos.ed.ac.uk/~s1997205/web-map/team.html">ABOUT</a></li>
+  
+
+</ul>
+    
+	
+<!-- title picture -->
+<div>
+  <img src="https://www.geos.ed.ac.uk/~s1997205/web-map/Gate1.jpg" alt="HCV" style="width:100%; min-height:350px; max-height:600px;">
+</div>
+    
+ 
+     
+     
+<!-- questionnarie -->	
+<div class="padding-64 theme-l1">
+<div class="center" id="QA">
+
+<h2>Our Questionnaire</h2>	
+<p>A questionnaire has been designed to help us understand the use of green spaces within Edinburgh. We would be delighted if you could take part.</p><br>
+  
+</div>
+       
+
+
+
+ 
+
+   <!-- BUTTON -->
+    <form style="text-align: center; margin-top: 30px" action="https://freeonlinesurveys.com/s/4UQPXx6j" method="get">
+    <button type="CGS" class="button button2" id="CGS">Cultural Ecosystem Services Questionnaire</button>
+    </form>
+   
+   </div>  
+   
+   
+   <!--thank you-->
+    <div class="center" style="margin-top: 80px; margin-bottom: 100px">
+    <h1 style="font-size:4em">THANK YOU!</h1>   
+    </div> 
+    
+    <!--our work-->
+    <div class="card">
+        <div class="center">
+            <h2>Show you our work</h2>
+        </div>
+       
+        
+        
+        
+        <!--part-->
+        <div class="across">
+            <div class="center" id="CHA">
+            <h3><a href="https://www.geos.ed.ac.uk/~s1997205/web-map/work.html">Cultural Heritage Assessment</a></h3>
+              
+        </div>
+    
+         <div class="center" id="GQA">
+            <h3><a href="https://www.geos.ed.ac.uk/~s1997205/web-map/work.html">Greenspace Quality Assessment</a></h3>
+            
+        </div>
+            
+          <div class="center" id="MAP">
+            <h3><a href="https://www.geos.ed.ac.uk/~s2126572/choropleth.html">Map</a></h3>
+              
+        </div>  
+            
+        </div>
+    </div>
+   
+<hr>
+ 
+    
+<!-- footer --> 
+    <footer>
+		
+		<img src="https://www.geos.ed.ac.uk/~s1997205/web-map/peo1.jpg" alt="HCV" style="width:100%; min-height:350px; max-height:550px;">
+		<div class="center padding-64 theme-l1"><h2>Thank you for participating!</h2></div>
+		
+
+    </footer>
+
+
+
+    <!--back to top-->
+        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button  w3-theme" href="#que"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  
+        </div>	
+    
+    
+<script>
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
